@@ -30,6 +30,14 @@ button:hover{
     border-radius: 100px;
     }
 
+.add{margin-left: 150px; margin-top: 50px;}
+
+.homebtn{margin-left: 610px;
+        border-radius: 5px;}
+
+.homeicon{border-radius: 100px;
+        margin: 50px; margin-left: 550px;}
+
 .animate {
     animation-duration: 0.5s;
     animation-name: animate-fade;
