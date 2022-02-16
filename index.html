@@ -13,31 +13,12 @@
 <body background="images/loginbox.jpg">
 
   <div class="container-fluid">
-  <h4 class="col-sm-3 animate pop head">Log in to your To-Do account</h4>
-  <form class="col-sm-7 login animate pop delay-1" action="todo.html" onsubmit="return checkusrname() && checkpwd()">
-    <br><br>
-    <img class="icon animate pop delay-2" src="images/icon.png" alt="icon">
-      <label for="username" class="col-sm-2 col-form-label">Username</label>
-      <div class="col-sm-5">
-        <input type="username" placeholder="Enter your Username" required class="form-control" id="usrname">
-        <label for="usrnamerror" id="usrnamerror"></label>
-      </div>
-      <label for="pwd" class="col-sm-2 col-form-label">Password</label>
-      <div class="col-sm-5">
-        <input type="password" placeholder="Enter your Password" required class="form-control" id="pwd">
-        <label for="pwderror" id="pwderror"></label>
-      </div>
-      <div class="col-sm-5">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Keep me logged in
-          </label>
-        </div>
-      </div>
-      <br>
-    <button type="submit" class="btn btn-primary animate pop delay-3">Log in</button>
-  </form>
+  <h2 class="col-sm-4 animate pop head">Welcome to your To-Do. <br> Login to proceed.</h2>
+    <img class="homeicon animate pop delay-1" src="images/icon.png" alt="icon">
+    <br>
+    <button type="button" class="homebtn btn-outline-secondary animate pop delay-2 submit">
+        <a href="login.html" style="text-decoration: none; font-weight: bold;">Proceed to Login</a>
+    </button>
   </div>
 
   <script src="script.js"></script>

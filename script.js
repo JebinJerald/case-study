@@ -23,3 +23,10 @@ function checkpwd(){
         }
 }
 
+$(document).ready(function () {
+    
+$(".results").load("https://jsonplaceholder.typicode.com/todos",function(res,status,xhr){
+    console.log("success")
+    });
+
+});
