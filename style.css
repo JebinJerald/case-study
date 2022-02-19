@@ -38,6 +38,9 @@ button:hover{
 .homeicon{border-radius: 100px;
         margin: 50px; margin-left: 550px;}
 
+#result{font-weight: bold;
+        margin-left: 150px;}
+
 .animate {
     animation-duration: 0.5s;
     animation-name: animate-fade;

@@ -17,10 +17,8 @@
         <img src="/images/icon.png" alt="icon" width="80" height="80">
     </div>
     <div class="container">
-      <button class="btn btn-outline-secondary nav-link animate pop delay-1" type="button">
-        <a href="todo.html" style="text-decoration: none; font-weight: bold;">To-Do List</a>
-      </button>
-      <button class="btn btn-sm btn-outline-secondary nav-link animate pop delay-3" type="button">
+      <button class="btn btn btn-outline-secondary nav-link animate pop delay-1" type="button" id="listbtn">To-Do List</button>
+      <button class="btn btn-sm btn-outline-secondary nav-link animate pop delay-2" type="button">
         <a href="index.html" style="text-decoration: none; font-weight: bold;">Log Out</a>
       </button>
     </div>
@@ -28,12 +26,9 @@
 <!-- /navbar -->
   <input type="text" placeholder="Start typing..." class="col-sm-8 add">
   <button class="btn btn-outline-secondary" style="font-weight: bold;">Add to list</button>
+  <br><br>
+  <div class="container text-start"  id="result">
 
-  <div class="list-group container animate pop delay-2 results">
-    <label class="list-group-item">
-      <input class="form-check-input result" type="checkbox" value="">
-      
-    </label>
   </div>
 
   <script src="script.js"></script>
