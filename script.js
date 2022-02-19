@@ -54,9 +54,6 @@ $(document).ready(function(){
 
             if (len=5){
 				alert('Congrats! 5 Tasks have been successfully completed');
-				window.setTimeout( ()=> {
-					window.location.reload();
-				  }, 1500);
 			}
 			});
 
