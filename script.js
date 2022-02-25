@@ -25,7 +25,8 @@ function checkpwd(){
 
 $(document).ready(function(){   
 
-	var mybutton =document.getElementById('listbtn');
+	var mybutton =document.getElementById('load');
+
     mybutton.onclick =()=>{
 
 	var request;
@@ -45,22 +46,29 @@ $(document).ready(function(){
                 }
                 output += '<input type="checkbox" class="inp" name="uncheck[]">' + items[key].title + '</input>' +'<br>';
 
-				document.getElementById('result').innerHTML = output;
+				document.getElementById('update').innerHTML = output;
             }
 		}
 
-		$('#result input:checkbox').on("change", function() {
-			var len = $('#result input[name="uncheck[]"]:checked').length;
-
-            if (len=5){
-				alert('Congrats! 5 Tasks have been successfully completed');
+		$('#update input:checkbox').on("change", function() {
+			var len = $('#update input[name="uncheck[]"]:checked').length;
+			if(len<5){
+				$("#general i .counter").text(' '+len+'');
+				console.log("Counter");
+				}
+			else if (len=5){
+				$("#general i .counter").text(' '+len+'');
+				$('#complete').text('5 tasks have been Completed for Today.');
+				alert('Congrats. 5 Tasks have been Successfully Completed');
 			}
+			else{
+				$("#general i .counter").text(' ');}
 			});
+	}
 
-        request.send();
-        mybutton.onclick =()=>{
-            location.reload();
-        }
+	request.send();
+	mybutton.onclick =()=>{
+		location.reload();
 	}
 }
 
