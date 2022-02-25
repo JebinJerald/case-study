@@ -10,39 +10,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>To-Do</title>
 </head>
-<body background="images/todo.jpg" style="background-size: auto;">
+<body background="images/todo.jpg">
 <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container animate pop">
-        <img src="/images/icon.png" alt="icon" width="80" height="80">
+        <img src="images/icon.png" alt="icon" width="80" height="80">
     </div>
     <div class="container">
-      <button class="btn btn btn-outline-secondary nav-link animate pop delay-1" type="button" id="load">To-Do List</button>
-      <button class="btn btn-sm btn-outline-secondary nav-link animate pop delay-2" type="button">
-        <a href="index.html" style="text-decoration: none; font-weight: bold;">Log Out</a>
+      <button class="btn btn-outline-secondary nav-link animate pop delay-1" type="button" id="load" style="width: 300px; margin-right: 330px;">To-Do List</button>
+      <button class="btn btn-sm btn-outline-secondary nav-link animate pop delay-2" type="button" style="width: 200px;">
+        <a href="login.html" style="text-decoration: none; font-weight: bold;">Log Out</a>
       </button>
     </div>
   </nav>
 <!-- /navbar -->
   <input type="text" placeholder="Start typing..." class="col-sm-8 add">
   <button class="btn btn-outline-secondary" style="font-weight: bold;">Add to list</button>
-  <br><br>
-  <div class="container text-start"  id="result">
-
-  </div>
-
+  
   <section class="container-fluid row text-center mt-5">
     <div class="container-fluid col-lg-6 mt-5"  title="Filter Category" id="general">
-        <big>
-            <i>Number of Task Completed<span class="counter"></span></i>
-        </big>
+        <h6>
+            <i>Number of Tasks Completed:<span class="counter"></span></i>
+        </h6>
     </div>
-    <div class="container m-3" id="complete">
-        
-    </div>
-    <div class="container text-start col-4"  id="update">
-      
-    </div>
+    <div class="container m-3"></div>
+    <div class="container text-start col-5"  id="update"></div>
   </section>
 
   <script src="script.js"></script>

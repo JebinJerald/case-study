@@ -42,9 +42,9 @@ $(document).ready(function(){
 			var output = '';
             for (var key in items) {
                 if (items[key].completed ==true){
-                output += '<input type="checkbox"  class="inp" name="check" checked disabled="disabled">' + items[key].title + '</input>' +'<br>';
+                output += '<input type="checkbox"  class="inp" name="check" checked disabled="disabled">' + items[key].title + '</input>' +'<br>'+'<br>';
                 }
-                output += '<input type="checkbox" class="inp" name="uncheck[]">' + items[key].title + '</input>' +'<br>';
+                output += '<input type="checkbox" class="inp" name="uncheck[]">' + items[key].title + '</input>' +'<br>'+'<br>';
 
 				document.getElementById('update').innerHTML = output;
             }
@@ -58,8 +58,7 @@ $(document).ready(function(){
 				}
 			else if (len=5){
 				$("#general i .counter").text(' '+len+'');
-				$('#complete').text('5 tasks have been Completed for Today.');
-				alert('Congrats. 5 Tasks have been Successfully Completed');
+				alert('Congrats! 5 Tasks have been Successfully Completed');
 			}
 			else{
 				$("#general i .counter").text(' ');}
